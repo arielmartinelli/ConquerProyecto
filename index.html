@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases en vivo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar bg-white shadow-sm p-3">
+      <!--<h5 class="fw-bold text-primary mb-4">Conquer Languages</h5>-->
+      <h5 class="fw-bold text-primary mb-4"><img style="width: 100%;" src="css/img/logo.png" alt=""></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link active">🏠 Inicio</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link">📘 Máster en inglés</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link">📄 El Rincón del PDF</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link">🎥 Clases en vivo</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link">💬 Foro</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link">❓ Ayuda</a></li>
+      </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main flex-grow-1 p-4 bg-light">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold text-dark">Clases en vivo</h3>
+        <div>
+          <select id="selectPais" class="form-select w-auto d-inline-block">
+            <option value="es">España</option>
+            <option value="us">Estados Unidos</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <option value="cl">Chile</option>
+            <option value="pe">Perú</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Tarjeta principal -->
+      <div class="card shadow border-0 rounded-4 p-4">
+        <h5 class="fw-bold mb-3" id="tituloZona">Europa</h5>
+        <div class="bg-light p-4 rounded-3 mb-4">
+          <h6 class="fw-bold mb-2">Shadowing (General)</h6>
+          <p id="horario" class="fs-5 text-primary"></p>
+          <button class="btn btn-info text-white px-4 rounded-pill">💻 Únete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
