@@ -4,18 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clases en vivo</title>
+  <!-- META TAGS para compartir en redes -->
+<meta property="og:title" content="Conquer Languages - Clases en Vivo">
+<meta property="og:description" content="Consulta los horarios de clases en vivo de Conquer Languages según tu país.">
+<meta property="og:image" content="https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/css/img/conquer.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://github.com/TU_USUARIO/TU_REPOSITORIO">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conquer Languages - Clases en Vivo">
+<meta name="twitter:description" content="Consulta los horarios de clases en vivo según tu país.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/css/img/conquer.png">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <!-- Contenedor general (sidebar + contenido) -->
+  <!-- Contenedor principal -->
   <div class="d-flex flex-column flex-lg-row">
 
     <!-- Sidebar -->
     <nav class="sidebar bg-white shadow-sm p-3" id="sidebarMenu">
       <div class="d-flex justify-content-between align-items-center mb-3">
-        <h5 class="fw-bold text-primary"><img style="width: 100%;" src="css/img/logo.png" alt=""></h5>
+        <h5 class="fw-bold text-primary">
+          <img style="width: 100%;" src="css/img/logo.png" alt="">
+        </h5>
         <button class="btn btn-light d-lg-none" id="toggleMenu">☰</button>
       </div>
       <ul class="nav flex-column" id="sidebarLinks">
@@ -45,15 +61,49 @@
           </div>
         </div>
 
-        <!-- Tarjeta principal -->
-        <div class="card shadow border-0 rounded-4 p-4">
-          <h5 class="fw-bold mb-3" id="tituloZona">Europa</h5>
-          <div class="bg-light p-4 rounded-3 mb-4">
+        <!-- Zona / País -->
+        <h5 class="fw-bold mb-3" id="tituloZona">Europa</h5>
+
+        <!-- Día Lunes -->
+        <div class="card shadow border-0 rounded-4 p-4 mb-4">
+          <h6 class="fw-bold mb-3 text-secondary">Lunes</h6>
+          <div class="bg-light p-4 rounded-3 mb-3">
             <h6 class="fw-bold mb-2">Shadowing (General)</h6>
-            <p id="horario" class="fs-5 text-primary"></p>
+            <p class="fs-5 text-primary" id="horario1"></p>
             <button class="btn btn-info text-white px-4 rounded-pill">💻 Únete</button>
           </div>
         </div>
+
+        <!-- Día Martes -->
+        <div class="card shadow border-0 rounded-4 p-4 mb-4">
+          <h6 class="fw-bold mb-3 text-secondary">Martes</h6>
+          <div class="bg-light p-4 rounded-3 mb-3">
+            <h6 class="fw-bold mb-2">Beginner (Beginner)</h6>
+            <p class="fs-5 text-primary" id="horario2"></p>
+            <button class="btn btn-info text-white px-4 rounded-pill">💻 Únete</button>
+          </div>
+        </div>
+
+        <!-- Día Miércoles -->
+        <div class="card shadow border-0 rounded-4 p-4 mb-4">
+          <h6 class="fw-bold mb-3 text-secondary">Miércoles</h6>
+          <div class="bg-light p-4 rounded-3 mb-3">
+            <h6 class="fw-bold mb-2">General (Conversation)</h6>
+            <p class="fs-5 text-primary" id="horario3"></p>
+            <button class="btn btn-info text-white px-4 rounded-pill">💻 Únete</button>
+          </div>
+        </div>
+
+        <!-- Día Jueves -->
+        <div class="card shadow border-0 rounded-4 p-4 mb-4">
+          <h6 class="fw-bold mb-3 text-secondary">Jueves </h6>
+          <div class="bg-light p-4 rounded-3 mb-3">
+            <h6 class="fw-bold mb-2">Beginner (Advanced)</h6>
+            <p class="fs-5 text-primary" id="horario4"></p>
+            <button class="btn btn-info text-white px-4 rounded-pill">💻 Únete</button>
+          </div>
+        </div>
+
       </div>
     </main>
   </div>
