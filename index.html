@@ -9,12 +9,16 @@
 </head>
 
 <body>
-  <div class="d-flex">
+  <!-- Contenedor general (sidebar + contenido) -->
+  <div class="d-flex flex-column flex-lg-row">
+
     <!-- Sidebar -->
-    <div class="sidebar bg-white shadow-sm p-3">
-      <!--<h5 class="fw-bold text-primary mb-4">Conquer Languages</h5>-->
-      <h5 class="fw-bold text-primary mb-4"><img style="width: 100%;" src="css/img/logo.png" alt=""></h5>
-      <ul class="nav flex-column">
+    <nav class="sidebar bg-white shadow-sm p-3" id="sidebarMenu">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-bold text-primary"><img style="width:90%;" src="css/img/logo.png" alt=""></h5>
+        <button class="btn btn-light d-lg-none" id="toggleMenu">☰</button>
+      </div>
+      <ul class="nav flex-column" id="sidebarLinks">
         <li class="nav-item mb-2"><a href="#" class="nav-link active">🏠 Inicio</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link">📘 Máster en inglés</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link">📄 El Rincón del PDF</a></li>
@@ -22,34 +26,36 @@
         <li class="nav-item mb-2"><a href="#" class="nav-link">💬 Foro</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link">❓ Ayuda</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <!-- Main content -->
-    <div class="main flex-grow-1 p-4 bg-light">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h3 class="fw-bold text-dark">Clases en vivo</h3>
-        <div>
-          <select id="selectPais" class="form-select w-auto d-inline-block">
-            <option value="es">España</option>
-            <option value="us">Estados Unidos</option>
-            <option value="mx">México</option>
-            <option value="ar">Argentina</option>
-            <option value="cl">Chile</option>
-            <option value="pe">Perú</option>
-          </select>
+    <!-- Contenido principal -->
+    <main class="main flex-grow-1 p-3 bg-light">
+      <div class="container-fluid">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
+          <h3 class="fw-bold text-dark mb-3 mb-md-0">Clases en vivo</h3>
+          <div>
+            <select id="selectPais" class="form-select w-auto d-inline-block">
+              <option value="es">España</option>
+              <option value="us">Estados Unidos</option>
+              <option value="mx">México</option>
+              <option value="ar">Argentina</option>
+              <option value="cl">Chile</option>
+              <option value="pe">Perú</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Tarjeta principal -->
+        <div class="card shadow border-0 rounded-4 p-4">
+          <h5 class="fw-bold mb-3" id="tituloZona">Europa</h5>
+          <div class="bg-light p-4 rounded-3 mb-4">
+            <h6 class="fw-bold mb-2">Shadowing (General)</h6>
+            <p id="horario" class="fs-5 text-primary"></p>
+            <button class="btn btn-info text-white px-4 rounded-pill">💻 Únete</button>
+          </div>
         </div>
       </div>
-
-      <!-- Tarjeta principal -->
-      <div class="card shadow border-0 rounded-4 p-4">
-        <h5 class="fw-bold mb-3" id="tituloZona">Europa</h5>
-        <div class="bg-light p-4 rounded-3 mb-4">
-          <h6 class="fw-bold mb-2">Shadowing (General)</h6>
-          <p id="horario" class="fs-5 text-primary"></p>
-          <button class="btn btn-info text-white px-4 rounded-pill">💻 Únete</button>
-        </div>
-      </div>
-    </div>
+    </main>
   </div>
 
   <script src="js/script.js"></script>
